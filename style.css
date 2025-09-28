@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@500&display=swap');
+
+@font-face {
+    font-family: "DMSerif";
+    src: url(./assets/fonts/DMSerifDisplay-Regular.ttf);
+}
+
+/* L'étoile donne du style à tous les éléments */
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    font-family: "DMSerif", Verdana;
+    background: url(./assets/img/lampe.jpg) center/cover;
+    /* VH (viewport height): 100% de la taille de l'écran */
+    min-height: 100vh;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    /* Les tailles de polices doivent être en rem */
+    font-size: 2.5rem;
+    text-shadow: 3px 8px 20px #581ac5d9;
+    color: rgb(79 38 153 / 91%);
+    font-family: "Oswald", sans-serif;
+}
+
+main {
+    height: 500px;
+    width: 90%;
+    background: #ffffffbf;
+    /* Centrer une boite */
+    margin: 0 auto;
+    border: 2px solid #0000ffa6;
+    border-radius: 10px 10px 0 0;
+    box-shadow: -1px 9px 20px 7px #03a9f433;
+    padding: 15px;
+}
+
+h2 {
+    margin: 0;
+}
