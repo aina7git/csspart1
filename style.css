@@ -30,7 +30,7 @@ h1 {
 }
 
 main {
-    height: 500px;
+    min-height: 500px;
     width: 90%;
     background: #ffffffbf;
     /* Centrer une boite */
@@ -41,6 +41,42 @@ main {
     padding: 15px;
 }
 
+.boite {
+    border: 2px dashed skyblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
 h2 {
     margin: 0;
+}
+
+/* Sert a répartir équitablement des éléments sur la page */
+.flexbox ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexbox li {
+    list-style: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: turquoise;
+    /* Centrer un unique élément verticalement et horizontalement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid */
+.grid-container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.grid img {
+    width: 100%;
 }
