@@ -46,6 +46,7 @@ main {
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
+    min-height: 150px;
 }
 
 h2 {
@@ -79,4 +80,71 @@ h2 {
 
 .grid img {
     width: 100%;
+    margin-top: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "i1 i2"
+    "ta ta"
+    "vi bt";
+}
+
+input, textarea {
+    margin: 5px;
+    border: 1px solid darkblue;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family:"DMSerif";
+    border-radius: 5px;
+}
+
+textarea {
+    grid-area: ta;
+    height: 40px;
+    resize: none;
+}
+
+#btn-submit {
+    grid-area: bt;
+    cursor: pointer;
+    background: cyan;
+    transition: 0.2s;
+}
+
+#btn-submit:hover {
+    background: darkblue;
+    color: whitesmoke;
+}
+
+/* ABSOLUTE */
+/* Sans élément en relative, de base, l'élément en absolute l'est par rapport au body  */
+/* Il faut mettre une position relative au parent pour contraindre l'élément en absolute dans ses frontières */
+
+.absolute {
+    position: relative;
+}
+
+#circle1 {
+    height: 60px;
+    width: 60px;
+    background: skyblue;
+    position: absolute;
+    border-radius: 150px;
+    top: -20px;
+    right: -20px;
+}
+
+#circle2{
+    height: 40px;
+    width: 40px;
+    border-radius: 150px;
+    background: teal;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+    top: 100px;
 }
